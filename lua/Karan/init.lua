@@ -1,3 +1,3 @@
-require('Karan.remap')
 require('Karan.adjust');
-require('Karan.set')
+require('Karan.remap');
+require('Karan.lazy');
