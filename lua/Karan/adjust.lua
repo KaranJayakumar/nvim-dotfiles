@@ -13,7 +13,6 @@ vim.opt.undofile = true;
 vim.opt.hlsearch = false;
 vim.opt.incsearch = true;
 
-vim.opt.termguicolors = true;
 vim.opt.scrolloff = 8;
 
 vim.opt.updatetime = 50;
@@ -21,5 +20,11 @@ vim.opt.updatetime = 50;
 vim.opt.colorcolumn = "80";
 -- set termguicolors to enable highlight groups
 vim.g.netrw_banner = 0;
-vim.opt.termguicolors = true
+
 vim.loader.enable();
+
+vim.cmd([[
+  highlight Normal guibg=NONE ctermbg=NONE
+  highlight NormalNC guibg=NONE ctermbg=NONE
+  highlight SignColumn guibg=NONE ctermbg=NONE
+]])
