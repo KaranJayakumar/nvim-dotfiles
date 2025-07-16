@@ -1,14 +1,5 @@
 return {
   {
-    "yorumicolors/yorumi.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd [[colorscheme yorumi]]
-      vim.cmd [[hi Normal guibg=NONE ctermbg=NONE]]
-    end
-  },
-  {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   },
