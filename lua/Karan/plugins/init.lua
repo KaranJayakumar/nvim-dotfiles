@@ -1,4 +1,18 @@
 return {
+{
+  "catppuccin/nvim",
+  name = "catppuccin",
+  priority = 1000,
+  config = function()
+	vim.cmd.colorscheme "catppuccin-latte"
+	vim.cmd([[
+	  highlight Normal guibg=NONE ctermbg=NONE
+	  highlight NormalNC guibg=NONE ctermbg=NONE
+	  highlight SignColumn guibg=NONE ctermbg=NONE
+	]])
+  end,
+},
+
   {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
