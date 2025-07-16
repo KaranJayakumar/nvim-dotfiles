@@ -22,9 +22,3 @@ vim.opt.colorcolumn = "80";
 vim.g.netrw_banner = 0;
 
 vim.loader.enable();
-
-vim.cmd([[
-  highlight Normal guibg=NONE ctermbg=NONE
-  highlight NormalNC guibg=NONE ctermbg=NONE
-  highlight SignColumn guibg=NONE ctermbg=NONE
-]])
