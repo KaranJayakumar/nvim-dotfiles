@@ -7,7 +7,7 @@
 !nvim/**
 
 !zsh/
-!zsh/**
+!zsh/.zshrc
 
 !ghostty/
 !ghostty/**
