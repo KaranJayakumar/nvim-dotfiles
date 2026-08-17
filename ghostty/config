@@ -1,4 +1,4 @@
-theme=github-light-high-contrast
+theme="GitHub Light High Contrast"
 window-height=160
 window-width=120
 window-save-state = always
