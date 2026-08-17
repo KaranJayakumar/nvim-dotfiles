@@ -1,0 +1,19 @@
+# Ignore everything
+*
+!.gitignore
+
+# Allow these directories
+!nvim/
+!nvim/**
+
+!zsh/
+!zsh/**
+
+!ghostty/
+!ghostty/**
+
+!karabiner/
+!karabiner/**
+
+!tmux/
+!tmux/**
