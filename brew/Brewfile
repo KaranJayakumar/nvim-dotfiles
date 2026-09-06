@@ -1,0 +1,40 @@
+tap "hashicorp/tap"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Fast and simple Node.js version manager
+brew "fnm"
+# GitHub command-line tool
+brew "gh"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Kubernetes package manager
+brew "helm"
+# Handy way to save and run project-specific commands
+brew "just"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Incremental parsing library
+brew "tree-sitter"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Development kit for the Java programming language
+brew "openjdk"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# Python version management
+brew "pyenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Terminal multiplexer
+brew "tmux"
+# Parser generator tool
+brew "tree-sitter-cli"
+# Watch files and take action when they change
+brew "watchman"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Terraform
+brew "hashicorp/tap/terraform", trusted: true
+# Replacement for Docker Desktop
+cask "orbstack"
+npm "corepack"

@@ -17,3 +17,6 @@
 
 !tmux/
 !tmux/**
+
+!brew/
+!brew/**
