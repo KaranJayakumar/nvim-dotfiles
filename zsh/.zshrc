@@ -16,8 +16,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 eval "$(pyenv init - zsh)"
 
-. "$HOME/.local/bin/env"
-
 # bun completions
 [ -s "/Users/karan/.bun/_bun" ] && source "/Users/karan/.bun/_bun"
 
@@ -35,4 +33,34 @@ alias nv="nvim"
 alias vim="nvim"
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+
+. "$HOME/.local/bin/env"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/karan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/karan/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+
+if [ -f '/Users/karan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/karan/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="$HOME/.local/bin:$PATH"
+
+# Keep the Mac running with the lid closed. Restore normal sleep before travel.
+mobile-work() {
+  case "$1" in
+    on)
+      sudo pmset -a disablesleep 1
+      ;;
+    off)
+      sudo pmset -a disablesleep 0
+      ;;
+    status)
+      pmset -g custom | grep disablesleep
+      ;;
+    *)
+      echo "Usage: mobile-work {on|off|status}"
+      return 2
+      ;;
+  esac
+}
 
